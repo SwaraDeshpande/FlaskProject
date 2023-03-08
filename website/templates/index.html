@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Name</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+</head>
+<body>
+  <header>
+    <img src="static/images/favicon.ico" width="50px" height="50px" style="float:left;margin-right:10px">
+    <h1 id = "company" class="left-center"></h1>
+    <div id="links" style="float:right;"></div>
+    
+      <script>
+        var links = [
+            { name: "Home", href: "/" },
+            { name: "Products", href: "/products" },
+            { name: "Company", href: "/company" },
+            { name: "Blog", href: "/blog" },
+        ];
+    
+        var linksHtml = "";
+        for (var i = 0; i < links.length; i++) {
+            linksHtml += `<a
+         href="${links[i].href}">${links[i].name}</a>`;
+            if(i !== links.length-1) linksHtml += ' | ';
+        }
+    
+        document.getElementById("links").innerHTML = linksHtml;
+      </script>
+  </header>
+    
+      <div id="company"></div>
+      <input type="text" id="newName" placeholder="New Company Name"></input>
+      <button id="updateBtn">Update Name</button>
+      <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <main>
+      <div id = "image"><img src="static/images/logo.gif"  width="1500" height="500"></div>
+
+      <div class="figure-container">
+        <figure>
+            <img src="static/images/SUImage.jpg" width="450px" height="300px" alt="">
+            <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+        </figure>
+        <figure>
+            <img src="static/images/nyc.jpg" width="450px" height="300px" alt="">
+            <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+        </figure>
+        <figure>
+            <img src="static/images/seattle.jpg" width="450px" height="300px" alt="">
+            <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+        </figure>
+    </div>
+    
+            <section id="about">
+            <p>Hi, this is Swarada and I created this website just for fun and also because it was given as a part of assesment.
+              I'm currently living in Warwick and waiting to snow at Hunter's so that I can go for skiing.
+              I can probably still go but there they might have fake snow. I got epic pass because I was excited for it.</p>
+
+              <p>I chose these paragraphs just to tell a little bit about myself. I worked at Nordstrom for almost a year as 
+                a SDE. I mostly worked on backend and not on front end. Working on frontend for this website made me realise again
+                that I like backend more than frontend. But frontend is fun!
+              </p>
+
+              <p>Before working at Nordstrom I also worked at couple of other place in Upstate NY. I worked at SUNY Upstate Medical University
+                as a Research Assistant and as a backend developer at iConsult, Syracuse University. Syracuse was so beautiful! I graduated in May'21
+                but I miss Syracuse almost everday.I was in Seattle for a year too and I must say west coast >>> east coast. Nature is at its best on west coast.
+              </p>
+        </section>
+    </main>
+    <footer>
+      <button id="contact-btn">Contact</button>
+      <div id = "socialMedia">
+      <img src="static/images/fb-logo.jpg" width="80px" height="50px" style="float:right;margin-right:80px">
+      <img src="static/images/twitterlogo.png" width="50px" height="50px" style="float:right;margin-right:20px">
+    </div>
+
+    </footer>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+
+</body>
+</html>

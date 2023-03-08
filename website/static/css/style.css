@@ -1,0 +1,94 @@
+header {
+    margin: 0;
+    padding: 0;
+    }
+    
+header img {
+    margin-right: 5px;
+    margin-left: 10px;
+
+    }
+    
+header h1 {
+    margin-left: 50px;
+    }
+#links {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        }
+#image {
+    margin-top: 50px;
+    width: 1500px ;
+    height: 500px;
+    background-size: 100%;
+    background-image: url(static/images/logo.gif) ;
+        }
+.figure-container {
+            display: flex;
+        }
+        
+figure {
+            flex: 1;
+            margin-right: 10px;
+            margin-left: 200 px;
+        }
+        
+figcaption {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            margin-top: 10px;
+            display: block;
+        }
+        
+    
+#about {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+       }
+
+#contact-btn {
+    position: absolute;
+    bottom: -700px;
+    margin-left: 25px;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Some padding */
+    border-radius: 12px 12px 12px 12px; /* Rounded corners on the bottom left */
+}
+
+#updateBtn{
+    position: absolute;
+    top: 20;
+    margin-left: 25px;
+    background-color: #4c74af; /* Blue background color */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Some padding */
+    line-height: 5px;
+    border-radius: 12px 12px 12px 12px; /* Rounded corners on the bottom left */
+
+}
+#socialMedia{
+    position: absolute;
+    right: 10px;
+    bottom: -700px;
+
+}
+#newName {
+     height:30px;
+     font-size:14pt;
+     }
+ h1:before {
+    background-image: url('img_girl.png');
+    padding: 30px  20px;
+    content: " ";
+    height:1px;
+    position:absolute;
+    top:10px;
+    width:500%;
+    left:-500%;
+}
+
